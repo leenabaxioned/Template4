@@ -84,7 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Gill Sans", sans-serif;
 }
 
 a { 
@@ -100,21 +100,71 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 65%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
+/*=================================
+  banner styling starts here
+=================================*/
+.banner {
+  padding: 180px 0 65px; 
+  background: linear-gradient(to right,  #544675 0%,#713D78 100%);
+}
+
+.banner .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+h2 { 
+  padding-right: 65px;
+  border-right: 1px solid #6E537E;
+  flex-basis: 43%;
+  color: #fff;
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.banner-content { flex-basis: 45%;}
+
+.banner-content p {
+  color: #AB9DBB;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.;
+}
+
+.start {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #49BD8B;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.start:hover {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.3s ease;
+}
+/*=================================
+  banner styling ends here
+=================================*/ 
+
 
 /*=================================
   main styling starts here
