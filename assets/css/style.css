@@ -97,6 +97,8 @@ li {
   list-style-type: none;
 }
 
+.icon { font-family: "FontAwesome";}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
@@ -169,9 +171,121 @@ h2 {
 /*=================================
   main styling starts here
 =================================*/
+/* about section styling starts here */
+.about .wrapper {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.about-list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
 
+.magna { 
+  padding-right: 50px;
+  flex-basis: 46%;
+  border-right: 1px solid #E4E4E4;
+}
 
+.magna h3 {
+  padding-bottom: 30px;
+  color: #666666;
+  font-size: 25px;
+}
+
+.magna p {
+  color: #877B82;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.learn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid #E9E9E9;
+  border-radius: 20px;
+  color: #756D69;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.learn:hover {
+  border: 1px solid transparent;
+  background-color: #756D69;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.about-list li { 
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #877B82;
+  font-size: 15px;
+  line-height: 3;
+}
+
+.about-list li::before {
+  content: "\f00c";
+  color: #49BD8B;
+  font-size: 14px;
+  text-indent: 0;
+}
+
+/* site-features section styling starts here */
+.site-features .wrapper,
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-features .wrapper { flex-wrap: wrap;}
+
+.feature-content { flex-basis: 55%;}
+
+.feature { 
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.feature-content h3 {
+  padding-bottom: 25px;
+  color: #666666;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feature-content p {
+  color: #877B82;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.details {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  color: #756D69;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.details:hover {
+  border: 1px solid transparent;
+  background-color: #756D69;
+  color: #fff;
+  transition: 0.3s ease;
+}
 
 
 
