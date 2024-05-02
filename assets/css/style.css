@@ -330,7 +330,6 @@ h2 {
 .contact .wrapper, .names {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -363,14 +362,14 @@ h2 {
 
 input[type=text], 
 textarea {
-  padding: 10px 0 10px 10px;
+  padding: 9px 0 9px 10px;
   margin-bottom: 20px;
   display: inline-block;
   border: 1px solid #DADADA;
   box-sizing: border-box;
 }
 
-textarea { padding-right: 5px;}
+textarea { padding-right: 9px;}
 
 form ::placeholder { 
   color: #DADADA;
@@ -454,7 +453,28 @@ footer p {
   footer styling ends here
 =================================*/ 
 
-/*media query starts*/
+/*-------------media query starts-------------*/
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  h2 {
+    padding-right: 25px;
+    flex-basis: 53%;
+  }
+
+  .banner-content { flex-basis: 40%;}
+  .about-list { flex-basis: 43%;}
+  .feature-content { flex-basis: 45%;}
+  .names { gap: 20px;}
+  .contact-information { flex-basis: 37%;}
+
+  .contact-form { 
+    width: 50%;
+    padding-right: 70px;
+  }
+
+  address { width: 100%;}
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   .banner { padding: 160px 0 65px;}
@@ -507,27 +527,46 @@ footer p {
   .feature-content p { font-size: 10px;}
   .contact-form { width: 60%;}
   .contact-information { flex-basis: 31%;}
-   address { width: 100%;} 
 
-   input[type=text] { width: 90%;}
+   input[type=text] { width: 100%;}
    textarea { 
-    width: 95%;
+    width: 100%;
     padding-right: 0;
   }
+
+  .contact .wrapper{ flex-wrap: wrap;}
 
   .contact-information li a:hover { 
     color: #877B82;
     cursor: none;
   }
+
+  .contact-form {
+    width: 63%;
+    border-right: none;
+  }
+
+  .contact-information { 
+    padding-top: 20px;
+    flex-basis: 100%;
+  }
+
+  .contact-information li:last-child { 
+    align-items: center;
+  }
 }  
 
+/*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner { padding: 140px 0 65px;}
 
   h2 {
-    flex-basis: 35%;
+    padding-right: 55px;
+    flex-basis: 38%;
     font-size: 14px;
   }
+
+  .banner-content { flex-basis: 46%;}
 
   .banner-content p {
     font-size: 9px;
@@ -550,23 +589,63 @@ footer p {
   .feature-content h3 { font-size: 13px;}
   .feature-content p { font-size: 9px;}
   .feature { gap: 15px;}
-  .contact-form { 
-    width: 100%;
-    border-right: none;
-  }
   .contact .wrapper { justify-content: left;}
-  input[type=text] { width: 100%;}
-  textarea { width: 100%;}
-
-  .contact-information { 
-    padding-top: 20px;
-    flex-basis: 100%;
-  }
-
-  .homeaddress { align-items: center;}
-
+  input[type=text] { padding-right: 8px;}
 }
 
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+  .banner { padding: 120px 0 65px;}
+
+  .banner .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    border-right: none;
+    font-size: 14px;
+  }
+
+  .banner-content { flex-basis: 100%;}
+
+  .about .wrapper { 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .magna {
+    flex-basis: 100%;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .about-list { flex-basis: 100%;}
+
+  .feature {
+    flex-basis: 87%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-content { 
+    flex-basis: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form { 
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  input[type=text] { padding-right: 113px;}
+  footer { padding: 30px 0;}
+  footer p { font-size: 10px;}
+}
+
+/*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
   .banner { padding: 120px 0 65px;}
 
@@ -604,8 +683,17 @@ footer p {
   }
 
   .contact-form { padding-right: 0;}
+
+  .names {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .send { margin-top: 0;}
+
+  textarea { padding-bottom: 0;}
   input[type=text] { padding-right: 113px;}
   footer { padding: 30px 0;}
   footer p { font-size: 10px;}
-  
+  .contact-information li:last-child { align-items: flex-start;}
 }
