@@ -369,7 +369,10 @@ textarea {
   box-sizing: border-box;
 }
 
-textarea { padding-right: 9px;}
+textarea { 
+  padding-right: 9px;
+  resize: none;
+}
 
 form ::placeholder { 
   color: #DADADA;
@@ -475,6 +478,24 @@ footer p {
   address { width: 100%;}
 }
 
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  h2 { flex-basis: 56%;}
+
+  .banner-content { flex-basis: 38%;}
+  .banner-content p { font-size: 13px;}
+  .feature-content { flex-basis: 43%;}
+  .names { gap: 10px;}
+
+  .contact-form { 
+    width: 58%;
+    padding-right: 40px;
+  }
+
+  input[type=text], textarea { padding-left: 8px;}
+  .contact-information { flex-basis: 32%;}
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   .banner { padding: 160px 0 65px;}
@@ -541,8 +562,8 @@ footer p {
     cursor: none;
   }
 
-  .contact-form {
-    width: 63%;
+  .contact-form { 
+    width: 60%;
     border-right: none;
   }
 
