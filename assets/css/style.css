@@ -194,23 +194,24 @@ h2 {
 .magna h3 {
   padding-bottom: 30px;
   color: #666666;
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .magna p {
   color: #877B82;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2;
 }
 
 .learn {
   margin-top: 20px;
-  padding: 12px 30px;
+  padding: 10px 30px;
   border: 1px solid #E9E9E9;
   border-radius: 20px;
   color: #756D69;
   letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -227,7 +228,7 @@ h2 {
   gap: 10px;
   align-items: center;
   color: #877B82;
-  font-size: 15px;
+  font-size: 13.5px;
   line-height: 3;
 }
 
@@ -242,35 +243,47 @@ h2 {
 .site-features .wrapper,
 .feature {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.site-features .wrapper { flex-wrap: wrap;}
+.site-features { 
+  padding: 70px 0;
+  border-top: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+}
 
-.feature-content { flex-basis: 55%;}
+.site-features .wrapper { 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-content { 
+  flex-basis: 55%;
+}
 
 .feature { 
+  justify-content: space-between;
   margin-bottom: 20px;
   border-bottom: 1px solid #EAEAEA;
+  background-color: #fff;
 }
 
 .feature-content h3 {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   color: #666666;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .feature-content p {
   color: #877B82;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2;
 }
 
 .details {
   margin-top: 25px;
-  padding: 12px 30px;
+  padding: 10px 30px;
   border: 1px solid #EAEAEA;
   border-radius: 20px;
   color: #756D69;
@@ -287,6 +300,26 @@ h2 {
   transition: 0.3s ease;
 }
 
+.magna-btn { text-align: center;}
+
+.ipsum {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid #E9E9E9;
+  border-radius: 20px;
+  color: #756D69;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ipsum:hover {
+  border: 1px solid transparent;
+  background-color: #756D69;
+  color: #fff;
+  transition: 0.3s ease;
+}
 
 
 
