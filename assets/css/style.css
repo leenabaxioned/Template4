@@ -488,12 +488,12 @@ footer p {
   .names { gap: 10px;}
 
   .contact-form { 
-    width: 58%;
+    width: 60.5%;
     padding-right: 40px;
   }
 
   input[type=text], textarea { padding-left: 8px;}
-  .contact-information { flex-basis: 32%;}
+  .contact-information { flex-basis: 30%;}
 }
 
 /*media query for 995px starts here*/
