@@ -321,8 +321,109 @@ h2 {
   transition: 0.3s ease;
 }
 
+/* contact styling starts here */
+.contact { 
+  padding: 50px 0;
+  border-bottom: 1px solid #E1E1E1;
+}
 
+.contact .wrapper, .names {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 47%;
+  align-items: flex-start;
+}
+
+.contact-form { 
+  width: 45%;
+  padding-right: 35px;
+  border-right: 1px solid #E4E4E4;
+}
+
+.contact-form h3 {
+  padding-bottom: 25px;
+  color: #666666;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.contact-form p {
+  padding-bottom: 20px;
+  color: #877B82;
+  font-size: 12px;
+  line-height: 2;
+}
+
+input[type=text], 
+textarea {
+  padding: 10px 5px 10px 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+}
+
+form ::placeholder { 
+  color: #DADADA;
+  font-size: 12px;
+}
+
+.send {
+  margin-top: 25px;
+  padding: 10px 30px;
+  border: 1px solid #E9E9E9;
+  border-radius: 20px;
+  background: none;
+  color: #756D69;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.send:hover {
+  border: 1px solid transparent;
+  background-color: #756D69;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.contact-information li a,
+address { color: #877B82;}
+
+address { width: 60%;}
+
+address span { 
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.contact-information li { 
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+.contact-information li::before {
+  color: #49BD8B;
+  font-size: 13px;
+  text-indent: 0;
+}
+
+.twitter::before { content: "\f099";}
+.facebook::before { content: "\f09a";}
+.instagram::before { content: "\f16d";}
+.mail::before { content: "\f0e0";}
+.homeaddress::before { content: "\f015";}
 
 /*=================================
   main styling ends here
