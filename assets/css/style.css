@@ -141,7 +141,7 @@ h2 {
   color: #AB9DBB;
   font-size: 15px;
   font-weight: bold;
-  line-height: 1.;
+  line-height: 1.5;
 }
 
 .start {
@@ -400,6 +400,11 @@ form ::placeholder {
 .contact-information li a,
 address { color: #877B82;}
 
+.contact-information li a:hover { 
+  color: #000;
+  transition: 0.3s ease;
+}
+
 address { width: 60%;}
 
 address span { 
@@ -452,7 +457,155 @@ footer p {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .banner { padding: 160px 0 65px;}
 
+  h2 {
+    flex-basis: 40%;
+    font-size: 20px;
+  }
 
+  .banner-content p { font-size: 11px;}
 
+  .start {
+    padding: 7px 25px;
+    font-size: 7px;
+  }
+
+  .start:hover {
+    border: 1px solid transparent;
+    background-color: #49BD8B;
+    color: #fff;
+    cursor: none;
+  }
+
+  .magna h3 { font-size: 17px;}
+  .magna p { font-size: 10px;}
+  .about-list { flex-basis: 40%;}
+  .about-list li { font-size: 12px;}
+  .about-list li::before { font-size: 12px;}
+
+  .learn, 
+  .details, 
+  .ipsum,
+  .send  {
+    padding: 7px 25px;
+    font-size: 7px;
+  }
+
+  .learn:hover, 
+  .details:hover, 
+  .ipsum:hover,
+  .send:hover  {
+    border: 1px solid #E9E9E9;
+    color: #756D69;
+    background-color: transparent;
+    cursor: none;
+  }
+
+  .feature-content { flex-basis: 40%;}
+  .feature-content h3 { font-size: 15px;}
+  .feature-content p { font-size: 10px;}
+  .contact-form { width: 60%;}
+  .contact-information { flex-basis: 31%;}
+   address { width: 100%;} 
+
+   input[type=text] { width: 90%;}
+   textarea { 
+    width: 95%;
+    padding-right: 0;
+  }
+
+  .contact-information li a:hover { 
+    color: #877B82;
+    cursor: none;
+  }
 }  
+
+@media only screen and (max-width: 768px) {
+  .banner { padding: 140px 0 65px;}
+
+  h2 {
+    flex-basis: 35%;
+    font-size: 14px;
+  }
+
+  .banner-content p {
+    font-size: 9px;
+  }
+
+  .start,
+  .learn,
+  .details,
+  .ipsum,
+  .send {
+    padding: 5px 20px;
+    font-size: 7px;
+  }
+
+  .magna h3 { font-size: 15px;}
+  .magna p { font-size: 9px;}
+  .about-list { flex-basis: 38%;}
+  .about-list li { font-size: 10px;}
+  .about-list li::before { font-size: 10px;}
+  .feature-content h3 { font-size: 13px;}
+  .feature-content p { font-size: 9px;}
+  .feature { gap: 15px;}
+  .contact-form { 
+    width: 100%;
+    border-right: none;
+  }
+  .contact .wrapper { justify-content: left;}
+  input[type=text] { width: 100%;}
+  textarea { width: 100%;}
+
+  .contact-information { 
+    padding-top: 20px;
+    flex-basis: 100%;
+  }
+
+  .homeaddress { align-items: center;}
+
+}
+
+@media only screen and (max-width: 480px) {
+  .banner { padding: 120px 0 65px;}
+
+  .banner .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    border-right: none;
+    font-size: 14px;
+  }
+
+  .banner-content { flex-basis: 100%;}
+
+  .about .wrapper { 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .magna {
+    flex-basis: 100%;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .about-list { flex-basis: 100%;}
+  .feature { flex-wrap: wrap;}
+  .feature-content { 
+    padding: 0 10px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+
+  .contact-form { padding-right: 0;}
+  input[type=text] { padding-right: 113px;}
+  footer { padding: 30px 0;}
+  footer p { font-size: 10px;}
+  
+}
