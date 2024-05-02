@@ -323,7 +323,7 @@ h2 {
 
 /* contact styling starts here */
 .contact { 
-  padding: 50px 0;
+  padding: 60px 0;
   border-bottom: 1px solid #E1E1E1;
 }
 
@@ -363,12 +363,14 @@ h2 {
 
 input[type=text], 
 textarea {
-  padding: 10px 5px 10px 10px;
+  padding: 10px 0 10px 10px;
   margin-bottom: 20px;
   display: inline-block;
   border: 1px solid #DADADA;
   box-sizing: border-box;
 }
+
+textarea { padding-right: 5px;}
 
 form ::placeholder { 
   color: #DADADA;
@@ -432,13 +434,17 @@ address span {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding: 50px 0;
+  background-color: #FAFAFA;
+}
 
-
-
-
-
-
-
+footer p {
+  color: #CBCBCE;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
